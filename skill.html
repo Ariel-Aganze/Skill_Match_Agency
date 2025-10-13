@@ -35,28 +35,29 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-[#181114] dark:text-background-light">
 <div class="relative w-full overflow-x-hidden">
+
 <header class="fixed top-0 left-0 right-0 z-50 glassmorphism border-b border-primary/20 dark:border-primary/30">
   <div class="container mx-auto flex items-center justify-between px-6 lg:px-10 py-4">
     <!-- Logo and Brand -->
     <div class="flex items-center gap-2">
       <div class="h-6 w-6 flex items-center justify-center text-primary">
         <svg class="h-6 w-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_6_330)">
-            <path clip-rule="evenodd"
-              d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
-              fill="currentColor" fill-rule="evenodd"></path>
-          </g>
-          <defs>
-            <clipPath id="clip0_6_330">
-              <rect fill="white" height="48" width="48"></rect>
-            </clipPath>
-          </defs>
+          <path clip-rule="evenodd"
+            d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+            fill="currentColor" fill-rule="evenodd"></path>
         </svg>
       </div>
       <h2 class="text-lg md:text-xl font-bold text-black">Skill Language Agency</h2>
     </div>
 
-    <!-- Navigation -->
+    <!-- Hamburger Icon -->
+    <button id="menu-toggle" class="md:hidden text-black focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation (Desktop) -->
     <nav class="hidden md:flex items-center gap-8 mx-6">
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#home">Home</a>
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#about">About</a>
@@ -66,15 +67,42 @@
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#faq">FAQ</a>
     </nav>
 
-    <!-- Call to Action Button -->
+    <!-- Call to Action Button (Desktop) -->
     <button
-  onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
-  class="hidden md:flex min-w-[120px] items-center justify-center rounded-lg bg-black h-10 px-6 text-sm font-bold text-white shadow-lg shadow-black/20 transition-transform hover:scale-105">
-  Contact Us
-</button>
-
+      onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+      class="hidden md:flex min-w-[120px] items-center justify-center rounded-lg bg-black h-10 px-6 text-sm font-bold text-white shadow-lg shadow-black/20 transition-transform hover:scale-105">
+      Contact Us
+    </button>
   </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+    <nav class="flex flex-col gap-4">
+      <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#home">Home</a>
+      <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#about">About</a>
+      <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#modules">Modules</a>
+      <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#team">Our Team</a>
+      <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#testimonials">Testimonials</a>
+      <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#faq">FAQ</a>
+      <button
+        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
+        class="w-full rounded-lg bg-black h-10 px-6 text-sm font-bold text-white shadow-lg shadow-black/20 transition-transform hover:scale-105">
+        Contact Us
+      </button>
+    </nav>
+  </div>
+
+  <!-- Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </header>
+
 
 <main>
 <section id="home" class="relative min-h-screen flex items-center justify-center bg-primary pt-20">
