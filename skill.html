@@ -41,13 +41,13 @@
     <!-- Logo and Brand -->
     <div class="flex items-center gap-2">
       <div class="h-6 w-6 flex items-center justify-center text-primary">
-        <svg class="h-6 w-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <!-- <svg class="h-6 w-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
           <path clip-rule="evenodd"
             d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
             fill="currentColor" fill-rule="evenodd"></path>
-        </svg>
+        </svg> -->
       </div>
-      <h2 class="text-lg md:text-xl font-bold text-black">Skill Language Agency</h2>
+      <h2 class="text-lg md:text-xl font-bold text-black">Skill Language</h2>
     </div>
 
     <!-- Hamburger Icon -->
@@ -105,15 +105,15 @@
 
 
 <main>
-<section id="home" class="relative min-h-screen flex items-center justify-center bg-primary pt-20">
+<section id="home" class="relative min-h-screen flex items-center justify-center pt-20 bg-pink-100/10 backdrop-blur-md">
   <!-- Background overlay -->
   <div
-    class="absolute inset-0 bg-cover bg-center opacity-10"
+    class="absolute inset-0 bg-cover bg-center opacity-10 -z-10"
     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPCZPznZC3YN5r81nKawBUVKSU56p8Fwg5Y30IbuEmBnbg8nDo9Hwhvgd4rPlmfa159jPtpbmprvP1zRlI_m_VXOeUKqlKEXw-PxUHBnrTtoaWWGHpEGQulpQU-hi6r_az-ZxhZS8TuysogewAtoEPveLwL8ls2ZhFTJAxxHDEbsJUWPhWcBTabC-V-wz1ceNnIokda6OBOmA2cENPu6O0rpUMgbdptfvgRGcpalVpkMZWw0N4Wx0cY4cCkbWuoEKWjez0TgObcEuD")'>
   </div>
 
   <!-- Content -->
-  <div class="relative container mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 lg:px-12 text-center lg:text-left">
+  <div class="relative container mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 lg:px-12 text-center lg:text-left z-10">
     <!-- LEFT: Hero Text -->
     <div class="flex-1 space-y-6">
       <h1 class="text-5xl md:text-6xl font-black tracking-tighter text-black leading-tight">
@@ -128,23 +128,18 @@
         class="min-w-[180px] rounded-lg bg-black h-12 px-8 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">
         Explore Modules
       </button>
-
     </div>
 
     <!-- RIGHT: Hero Image -->
-    <div class="flex-1 flex justify-center lg:justify-end mx-6 lg:mx-12">
-      <div class="relative w-full max-w-md lg:max-w-sm">
-        <img
-          src="img/hero.png"
-          alt="Language learning illustration"
-          class="rounded-xl shadow-2xl w-full" />
-        <!-- Decorative shapes -->
-        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-white/20 rounded-xl -z-10"></div>
-        <div class="absolute -top-6 -right-6 w-24 h-24 bg-white/20 rounded-full -z-10"></div>
-      </div>
+    <div class="flex-1 flex items-end justify-end">
+      <img
+        src="img/hero_bg_1.png"
+        alt="Language learning illustration"
+        class="w-full max-w-md lg:max-w-lg object-contain" />
     </div>
   </div>
 </section>
+
 
 
 <!-- <section id="home" class="relative min-h-screen flex items-center justify-center bg-primary pt-20"> -->
@@ -260,73 +255,101 @@
 <h2 class="text-4xl font-bold tracking-tight text-center mb-12">Our Team</h2>
 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
 <div class="text-center">
-<img alt="Sarah Chen" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/woman teacher.png"/>
+<img alt="Sarah Chen" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/female.png"/>
 <h3 class="text-xl font-bold">Sarah Chen</h3>
 <p class="text-primary">Spanish Instructor</p>
 </div>
 <div class="text-center">
-<img alt="David Rodriguez" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/man teacher.png"/>
+<img alt="David Rodriguez" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/male.png"/>
 <h3 class="text-xl font-bold">David Rodriguez</h3>
 <p class="text-primary">French Instructor</p>
 </div>
 <div class="text-center">
-<img alt="Emily Carter" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/woman teacher.png"/>
+<img alt="Emily Carter" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/female.png"/>
 <h3 class="text-xl font-bold">Emily Carter</h3>
 <p class="text-primary">Mandarin Instructor</p>
 </div>
 <div class="text-center">
-<img alt="Markus Schmidt" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/man teacher.png"/>
+<img alt="Markus Schmidt" class="w-40 h-40 rounded-full mx-auto mb-4 shadow-lg" src="img/male.png"/>
 <h3 class="text-xl font-bold">Markus Schmidt</h3>
 <p class="text-primary">German Instructor</p>
 </div>
 </div>
 </div>
 </section>
-<section class="py-24 bg-primary/5 dark:bg-primary/10" id="testimonials">
-<div class="container mx-auto px-6">
-<h2 class="text-4xl font-bold tracking-tight text-center mb-12">What Our Students Say</h2>
-<div class="grid lg:grid-cols-3 gap-8">
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-lg shadow-md">
-<div class="flex items-center mb-4">
-<img alt="Alex Turner" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcAJcaR1TkKBKZnt8thWlBqYwkl6M_czlz0Yio12gge_px27k9GVAd3wwkWVD14u15H9-BPNfS-auEWS7uKMzAIlM7f-yaEruznPkJ70c3GmnGTPDT-pxfcD6O3caF9OOD9v1dSl2skhzvpT3C9_oOWrMCRiu-e12aT9vF55_LMR4uF4w8TRyD5MCGd8rT_cUcmIH5Q91HsP5-P4L-pF0b4la4eO4tt2b6Nf70hS6tiScEQlV-6QTf7ihZcFtPGnnzIWRo1IhrNNMW"/>
-<div>
-<h4 class="font-bold">Alex Turner</h4>
-<p class="text-sm text-slate-500 dark:text-slate-400">2023-08-15</p>
-</div>
-</div>
-<p class="text-slate-600 dark:text-slate-300">
-                  "Skill Language Agency helped me achieve fluency in Spanish in just six months. The instructors are incredibly supportive and the curriculum is well-structured
-                  and engaging."
-                </p>
-</div>
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-lg shadow-md">
-<div class="flex items-center mb-4">
-<img alt="Sophia Lee" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADWvEyXn6K6XWzRaiOigiHnZXPdhmwDiZ--zKyssMpsNj2lycNlj53TBhboiZO50p_yVljeG9bUMT7THcPRb_fbeavhl2AKAVWbDvCRPed9rv2MMM3TncAqaTKk6ZRkGfAXv2iIXaUKmLcWNlkEUVuSOziVEMJ8TvdPh4-D-0zAh2Fwgq4tvb56AN9Q2fgo0uegrJXr9QUxVsn_dN8goQiVXjk07PWxhltg3-1AX5eMr0q6bo3iPqihz3XTzS_E7FpXeZhbh-jzDoq"/>
-<div>
-<h4 class="font-bold">Sophia Lee</h4>
-<p class="text-sm text-slate-500 dark:text-slate-400">2023-09-22</p>
-</div>
-</div>
-<p class="text-slate-600 dark:text-slate-300">
-                  "I improved my French significantly with Skill Language Agency. The lessons were interactive and the cultural immersion activities were a great addition."
-                </p>
-</div>
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-lg shadow-md">
-<div class="flex items-center mb-4">
-<img alt="Ethan Clark" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiOSNMu12rdFpboG3C7T5GpQnT1Twe_jm6sWpDVphTMq0iENuDHXcXTtWA9GuwVHx2wb5z2Yqsy_ArMJ-kkfaxcrNXYaJXRNfKyXjmZQ216O-dZ-xdQNxMZpL72zmKIluADgYEjMzAvxxkWXkku6hUSybR9WT5CCKKaeYTAczf1NCJb35_m_npRkSyMon-1LNXy3yezHGbRfYuE18XUXFvWdu857zBO3jfBoZ0NdV8jxfDL3f3Nae8X9S9hH9MS2kEScTESUPl4yS"/>
-<div>
-<h4 class="font-bold">Ethan Clark</h4>
-<p class="text-sm text-slate-500 dark:text-slate-400">2023-10-10</p>
-</div>
-</div>
-<p class="text-slate-600 dark:text-slate-300">
-                  "The Mandarin course at Skill Language Agency is top-notch. The instructors are knowledgeable and the program is tailored to individual learning styles. Highly
-                  recommend!"
-                </p>
-</div>
-</div>
-</div>
+
+<section
+  id="testimonials"
+  class="py-24 relative bg-gradient-to-br from-purple-100/20 via-pink-50/10 to-white/10 dark:from-purple-950/20 dark:via-pink-900/10 dark:to-gray-900/20 backdrop-blur-lg">
+  <div class="absolute inset-0 bg-gradient-to-r from-purple-400/10 via-pink-300/10 to-transparent blur-3xl -z-10"></div>
+
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold tracking-tight text-center mb-12 text-gray-900 dark:text-white">
+      What Our Students Say
+    </h2>
+
+    <div class="grid lg:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div
+        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-white/20 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
+        <div class="flex items-center mb-4">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcAJcaR1TkKBKZnt8thWlBqYwkl6M_czlz0Yio12gge_px27k9GVAd3wwkWVD14u15H9-BPNfS-auEWS7uKMzAIlM7f-yaEruznPkJ70c3GmnGTPDT-pxfcD6O3caF9OOD9v1dSl2skhzvpT3C9_oOWrMCRiu-e12aT9vF55_LMR4uF4w8TRyD5MCGd8rT_cUcmIH5Q91HsP5-P4L-pF0b4la4eO4tt2b6Nf70hS6tiScEQlV-6QTf7ihZcFtPGnnzIWRo1IhrNNMW"
+            alt="Alex Turner"
+            class="w-12 h-12 rounded-full mr-4 border-2 border-pink-300/60"
+          />
+          <div>
+            <h4 class="font-semibold text-gray-900 dark:text-white">Alex Turner</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-400">2023-08-15</p>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300">
+          "Skill Language Agency helped me achieve fluency in Spanish in just six months. The instructors are incredibly supportive and the curriculum is well-structured and engaging."
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div
+        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-white/20 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
+        <div class="flex items-center mb-4">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuADWvEyXn6K6XWzRaiOigiHnZXPdhmwDiZ--zKyssMpsNj2lycNlj53TBhboiZO50p_yVljeG9bUMT7THcPRb_fbeavhl2AKAVWbDvCRPed9rv2MMM3TncAqaTKk6ZRkGfAXv2iIXaUKmLcWNlkEUVuSOziVEMJ8TvdPh4-D-0zAh2Fwgq4tvb56AN9Q2fgo0uegrJXr9QUxVsn_dN8goQiVXjk07PWxhltg3-1AX5eMr0q6bo3iPqihz3XTzS_E7FpXeZhbh-jzDoq"
+            alt="Sophia Lee"
+            class="w-12 h-12 rounded-full mr-4 border-2 border-purple-300/60"
+          />
+          <div>
+            <h4 class="font-semibold text-gray-900 dark:text-white">Sophia Lee</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-400">2023-09-22</p>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300">
+          "I improved my French significantly with Skill Language Agency. The lessons were interactive and the cultural immersion activities were a great addition."
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div
+        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-white/20 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
+        <div class="flex items-center mb-4">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiOSNMu12rdFpboG3C7T5GpQnT1Twe_jm6sWpDVphTMq0iENuDHXcXTtWA9GuwVHx2wb5z2Yqsy_ArMJ-kkfaxcrNXYaJXRNfKyXjmZQ216O-dZ-xdQNxMZpL72zmKIluADgYEjMzAvxxkWXkku6hUSybR9WT5CCKKaeYTAczf1NCJb35_m_npRkSyMon-1LNXy3yezHGbRfYuE18XUXFvWdu857zBO3jfBoZ0NdV8jxfDL3f3Nae8X9S9hH9MS2kEScTESUPl4yS"
+            alt="Ethan Clark"
+            class="w-12 h-12 rounded-full mr-4 border-2 border-purple-400/60"
+          />
+          <div>
+            <h4 class="font-semibold text-gray-900 dark:text-white">Ethan Clark</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-400">2023-10-10</p>
+          </div>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300">
+          "The Mandarin course at Skill Language Agency is top-notch. The instructors are knowledgeable and the program is tailored to individual learning styles. Highly recommend!"
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 
 
 <section class="py-24 bg-white" id="faq">
