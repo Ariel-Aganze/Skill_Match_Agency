@@ -26,6 +26,11 @@
       };
     </script>
 <style>
+
+  html {
+  scroll-behavior: smooth;
+}
+
       .glassmorphism {
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
@@ -65,14 +70,15 @@
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#team">Our Team</a>
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#testimonials">Testimonials</a>
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#faq">FAQ</a>
+      <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#contact">Contact Us</a>
     </nav>
 
     <!-- Call to Action Button (Desktop) -->
-    <button
+    <!-- <button
       onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
       class="hidden md:flex min-w-[120px] items-center justify-center rounded-lg bg-black h-10 px-6 text-sm font-bold text-white shadow-lg shadow-black/20 transition-transform hover:scale-105">
       Contact Us
-    </button>
+    </button> -->
   </div>
 
   <!-- Mobile Menu -->
@@ -84,11 +90,11 @@
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#team">Our Team</a>
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#testimonials">Testimonials</a>
       <a class="text-sm font-medium text-black hover:text-primary transition-colors" href="#faq">FAQ</a>
-      <button
+      <!-- <button
         onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })"
         class="w-full rounded-lg bg-black h-10 px-6 text-sm font-bold text-white shadow-lg shadow-black/20 transition-transform hover:scale-105">
         Contact Us
-      </button>
+      </button> -->
     </nav>
   </div>
 
@@ -105,29 +111,42 @@
 
 
 <main>
-<section id="home" class="relative min-h-screen flex items-center justify-center pt-20 bg-pink-100/10 backdrop-blur-md">
-  <!-- Background overlay -->
+<section
+  id="home"
+  class="relative min-h-screen flex items-center justify-center pt-20 bg-gradient-to-br from-[#c8fedc]/30 via-white/10 to-[#c8fedc]/20 backdrop-blur-lg overflow-hidden">
+  
+  <!-- Soft glowing overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-[#c8fedc]/15 via-white/5 to-transparent blur-3xl -z-10"></div>
+
+  <!-- Decorative background image -->
   <div
     class="absolute inset-0 bg-cover bg-center opacity-10 -z-10"
     style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPCZPznZC3YN5r81nKawBUVKSU56p8Fwg5Y30IbuEmBnbg8nDo9Hwhvgd4rPlmfa159jPtpbmprvP1zRlI_m_VXOeUKqlKEXw-PxUHBnrTtoaWWGHpEGQulpQU-hi6r_az-ZxhZS8TuysogewAtoEPveLwL8ls2ZhFTJAxxHDEbsJUWPhWcBTabC-V-wz1ceNnIokda6OBOmA2cENPu6O0rpUMgbdptfvgRGcpalVpkMZWw0N4Wx0cY4cCkbWuoEKWjez0TgObcEuD")'>
   </div>
 
   <!-- Content -->
-  <div class="relative container mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 lg:px-12 text-center lg:text-left z-10">
+  <div
+    class="relative container mx-auto flex flex-col lg:flex-row items-center gap-12 px-6 lg:px-12 text-center lg:text-left z-10">
+    
     <!-- LEFT: Hero Text -->
     <div class="flex-1 space-y-6">
-      <h1 class="text-5xl md:text-6xl font-black tracking-tighter text-black leading-tight">
+      <h1 class="text-5xl md:text-6xl font-black tracking-tighter text-gray-900 leading-tight">
         Master a New Language with Expert Guidance
       </h1>
-      <p class="text-lg text-black max-w-xl mx-auto lg:mx-0">
+      <p class="text-lg text-gray-700 max-w-xl mx-auto lg:mx-0">
         Personalized language training programs designed to help you achieve fluency and confidence.
         Our experienced instructors and innovative methods ensure effective and engaging learning.
       </p>
       <button
-        onclick="document.getElementById('modules').scrollIntoView({ behavior: 'smooth' })"
-        class="min-w-[180px] rounded-lg bg-black h-12 px-8 text-base font-bold text-white shadow-lg transition-transform hover:scale-105">
-        Explore Modules
-      </button>
+  onclick="document.getElementById('modules').scrollIntoView({ behavior: 'smooth' })"
+  class="min-w-[180px] h-12 px-8 text-base font-bold text-black rounded-lg backdrop-blur-md bg-white/10 shadow-lg transition-transform hover:scale-105 relative overflow-hidden">
+  
+  <span class="relative z-10">Explore Modules</span>
+
+  <!-- Gradient Glow Overlay -->
+  <div class="absolute inset-0 z-0 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-300 opacity-30 rounded-lg"></div>
+</button>
+
     </div>
 
     <!-- RIGHT: Hero Image -->
@@ -135,10 +154,11 @@
       <img
         src="img/hero_bg_1.png"
         alt="Language learning illustration"
-        class="w-full max-w-md lg:max-w-lg object-contain" />
+        class="w-full max-w-md lg:max-w-lg object-contain drop-shadow-2xl" />
     </div>
   </div>
 </section>
+
 
 
 
@@ -280,8 +300,8 @@
 
 <section
   id="testimonials"
-  class="py-24 relative bg-gradient-to-br from-purple-100/20 via-pink-50/10 to-white/10 dark:from-purple-950/20 dark:via-pink-900/10 dark:to-gray-900/20 backdrop-blur-lg">
-  <div class="absolute inset-0 bg-gradient-to-r from-purple-400/10 via-pink-300/10 to-transparent blur-3xl -z-10"></div>
+  class="py-24 relative bg-gradient-to-br from-[#c8fedc]/30 via-white/10 to-[#c8fedc]/20 dark:from-[#c8fedc]/10 dark:via-gray-900/20 dark:to-gray-800/20 backdrop-blur-lg">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#c8fedc]/15 via-white/5 to-transparent blur-3xl -z-10"></div>
 
   <div class="container mx-auto px-6">
     <h2 class="text-4xl font-bold tracking-tight text-center mb-12 text-gray-900 dark:text-white">
@@ -291,12 +311,12 @@
     <div class="grid lg:grid-cols-3 gap-8">
       <!-- Testimonial 1 -->
       <div
-        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-white/20 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
+        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-[#c8fedc]/30 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
         <div class="flex items-center mb-4">
           <img
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcAJcaR1TkKBKZnt8thWlBqYwkl6M_czlz0Yio12gge_px27k9GVAd3wwkWVD14u15H9-BPNfS-auEWS7uKMzAIlM7f-yaEruznPkJ70c3GmnGTPDT-pxfcD6O3caF9OOD9v1dSl2skhzvpT3C9_oOWrMCRiu-e12aT9vF55_LMR4uF4w8TRyD5MCGd8rT_cUcmIH5Q91HsP5-P4L-pF0b4la4eO4tt2b6Nf70hS6tiScEQlV-6QTf7ihZcFtPGnnzIWRo1IhrNNMW"
             alt="Alex Turner"
-            class="w-12 h-12 rounded-full mr-4 border-2 border-pink-300/60"
+            class="w-12 h-12 rounded-full mr-4 border-2 border-[#c8fedc]/60"
           />
           <div>
             <h4 class="font-semibold text-gray-900 dark:text-white">Alex Turner</h4>
@@ -310,12 +330,12 @@
 
       <!-- Testimonial 2 -->
       <div
-        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-white/20 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
+        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-[#c8fedc]/30 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
         <div class="flex items-center mb-4">
           <img
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuADWvEyXn6K6XWzRaiOigiHnZXPdhmwDiZ--zKyssMpsNj2lycNlj53TBhboiZO50p_yVljeG9bUMT7THcPRb_fbeavhl2AKAVWbDvCRPed9rv2MMM3TncAqaTKk6ZRkGfAXv2iIXaUKmLcWNlkEUVuSOziVEMJ8TvdPh4-D-0zAh2Fwgq4tvb56AN9Q2fgo0uegrJXr9QUxVsn_dN8goQiVXjk07PWxhltg3-1AX5eMr0q6bo3iPqihz3XTzS_E7FpXeZhbh-jzDoq"
             alt="Sophia Lee"
-            class="w-12 h-12 rounded-full mr-4 border-2 border-purple-300/60"
+            class="w-12 h-12 rounded-full mr-4 border-2 border-[#c8fedc]/60"
           />
           <div>
             <h4 class="font-semibold text-gray-900 dark:text-white">Sophia Lee</h4>
@@ -329,12 +349,12 @@
 
       <!-- Testimonial 3 -->
       <div
-        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-white/20 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
+        class="p-8 rounded-2xl shadow-xl bg-white/20 dark:bg-gray-800/20 border border-[#c8fedc]/30 backdrop-blur-md hover:scale-[1.02] transition-transform duration-300">
         <div class="flex items-center mb-4">
           <img
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiOSNMu12rdFpboG3C7T5GpQnT1Twe_jm6sWpDVphTMq0iENuDHXcXTtWA9GuwVHx2wb5z2Yqsy_ArMJ-kkfaxcrNXYaJXRNfKyXjmZQ216O-dZ-xdQNxMZpL72zmKIluADgYEjMzAvxxkWXkku6hUSybR9WT5CCKKaeYTAczf1NCJb35_m_npRkSyMon-1LNXy3yezHGbRfYuE18XUXFvWdu857zBO3jfBoZ0NdV8jxfDL3f3Nae8X9S9hH9MS2kEScTESUPl4yS"
             alt="Ethan Clark"
-            class="w-12 h-12 rounded-full mr-4 border-2 border-purple-400/60"
+            class="w-12 h-12 rounded-full mr-4 border-2 border-[#c8fedc]/60"
           />
           <div>
             <h4 class="font-semibold text-gray-900 dark:text-white">Ethan Clark</h4>
@@ -348,6 +368,7 @@
     </div>
   </div>
 </section>
+
 
 
 
@@ -419,9 +440,11 @@
 
 
 
-<section id="contact" class="py-24 bg-primary/5 dark:bg-primary/10">
+<section
+  id="contact"
+  class="relative py-24 bg-gradient-to-br from-[#c8fedc]/40 via-white/30 to-[#c8fedc]/30 backdrop-blur-xl">
   <div class="container mx-auto px-6 lg:px-12">
-    <h2 class="text-4xl font-bold tracking-tight text-center mb-12">
+    <h2 class="text-4xl font-bold tracking-tight text-center mb-12 text-gray-900">
       Contact Us
     </h2>
 
@@ -431,11 +454,11 @@
         <h3 class="text-2xl font-semibold mb-4 text-primary">
           Get in Touch
         </h3>
-        <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+        <p class="text-slate-700 leading-relaxed">
           We’d love to hear from you! Whether you have questions about our language modules or want to join our next session, reach out to us anytime.
         </p>
 
-        <ul class="space-y-4 text-slate-700 dark:text-slate-300">
+        <ul class="space-y-4 text-slate-800">
           <li>
             <strong>Address:</strong> Kigali, Rwanda
           </li>
@@ -458,71 +481,80 @@
       </div>
 
       <!-- RIGHT: Contact Form Card -->
-      <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border border-slate-100 dark:border-slate-700">
+      <div
+        class="rounded-2xl shadow-xl p-8 border border-white/30 bg-white/40 backdrop-blur-lg">
         <form class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- First Name -->
             <div>
-              <label for="first-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label for="first-name" class="block text-sm font-medium text-slate-700 mb-2">
                 First Name
               </label>
-              <input type="text" id="first-name" placeholder="Enter your First Name"
-                class="form-input w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary" />
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Enter your First Name"
+                class="form-input w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm placeholder:text-slate-500" />
             </div>
 
-            <!-- Last Name -->
             <div>
-              <label for="last-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+              <label for="last-name" class="block text-sm font-medium text-slate-700 mb-2">
                 Last Name
               </label>
-              <input type="text" id="last-name" placeholder="Enter your Last Name"
-                class="form-input w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary" />
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Enter your Last Name"
+                class="form-input w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm placeholder:text-slate-500" />
             </div>
           </div>
 
-          <!-- Age -->
           <div>
-            <label for="age" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-              Age
-            </label>
-            <input type="number" id="age" placeholder="Enter Your Age"
-              class="form-input w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary" />
+            <label for="age" class="block text-sm font-medium text-slate-700 mb-2">Age</label>
+            <input
+              type="number"
+              id="age"
+              placeholder="Enter Your Age"
+              class="form-input w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm placeholder:text-slate-500" />
           </div>
 
-          <!-- Email -->
           <div>
-            <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-              Email
-            </label>
-            <input type="email" id="email" placeholder="example@email.com"
-              class="form-input w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary" />
+            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@email.com"
+              class="form-input w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm placeholder:text-slate-500" />
           </div>
 
-          <!-- Phone -->
           <div>
-            <label for="phone" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">
               Phone Number (WhatsApp)
             </label>
-            <input type="tel" id="phone" placeholder="+250 7xx xxx xxx"
-              class="form-input w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary" />
+            <input
+              type="tel"
+              id="phone"
+              placeholder="+250 7xx xxx xxx"
+              class="form-input w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm placeholder:text-slate-500" />
           </div>
 
-          <!-- Nationality -->
           <div>
-            <label for="nationality" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label for="nationality" class="block text-sm font-medium text-slate-700 mb-2">
               Nationality
             </label>
-            <input type="text" id="nationality" placeholder="Enter Your Nationality"
-              class="form-input w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary" />
+            <input
+              type="text"
+              id="nationality"
+              placeholder="Enter Your Nationality"
+              class="form-input w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm placeholder:text-slate-500" />
           </div>
 
-          <!-- Module Interested In -->
           <div>
-            <label for="module" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+            <label for="module" class="block text-sm font-medium text-slate-700 mb-2">
               Module Interested In
             </label>
-            <select id="module"
-              class="form-select w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary">
+            <select
+              id="module"
+              class="form-select w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm">
               <option>English</option>
               <option>French</option>
               <option>Spanish</option>
@@ -531,21 +563,26 @@
             </select>
           </div>
 
-          <!-- Message -->
           <div>
-            <label for="message" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
-              Message
-            </label>
-            <textarea id="message" rows="4" placeholder="Write your message..."
-              class="form-textarea w-full rounded-lg bg-background-light dark:bg-background-dark border-slate-300 dark:border-slate-600 focus:ring-primary focus:border-primary"></textarea>
+            <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Write your message..."
+              class="form-textarea w-full rounded-lg bg-white/60 border border-slate-300 focus:ring-primary focus:border-primary backdrop-blur-sm placeholder:text-slate-500"></textarea>
           </div>
 
-          <!-- Submit Button -->
           <div class="text-center">
-            <button type="submit"
-              class="min-w-[180px] rounded-lg bg-primary h-12 px-8 text-base font-bold text-white shadow-lg shadow-primary/30 transition-transform hover:scale-105">
-              Send Message
-            </button>
+            <button
+  type="submit"
+  class="min-w-[180px] h-12 px-8 text-base font-bold text-black rounded-lg backdrop-blur-md bg-white/10   shadow-lg transition-transform hover:scale-105 relative overflow-hidden">
+  
+  <span class="relative z-10">Send Message</span>
+
+  <!-- Gradient Glow Overlay -->
+  <div class="absolute inset-0 z-0 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-300 opacity-30 rounded-lg"></div>
+</button>
+
           </div>
         </form>
       </div>
@@ -554,56 +591,60 @@
 </section>
 
 
+
 </main>
 
-<footer class="bg-[#1a1a1a] text-white py-12">
-  <div class="container mx-auto px-6 lg:px-12">
+<footer class="relative bg-[#222222]/95 text-white py-12">
+  <div class="container mx-auto px-6 lg:px-12 relative z-10">
     <div class="flex flex-col lg:flex-row justify-between items-center gap-6">
 
       <!-- LEFT: Copyright -->
-      <p class="text-center lg:text-left">© Skill Language Agency. All rights reserved.</p>
+      <p class="text-center lg:text-left text-white/80">
+        © Skill Language Agency. All rights reserved.
+      </p>
 
       <!-- CENTER: Social Media Links -->
-      <div class="flex space-x-4">
-        <!-- Instagram -->
-        <a href="#" class="hover:text-pink-400 transition-colors" aria-label="Instagram">
-          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.5.5.2.8.5 1.1.9.3.3.6.6.9 1.1.2.4.4 1 .5 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.5 2.2-.2.5-.5.8-.9 1.1-.3.3-.6.6-1.1.9-.4.2-1 .4-2.2.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.5-.2-.8-.5-1.1-.9-.3-.3-.6-.6-.9-1.1-.2-.4-.4-1-.5-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.5.5-.8.9-1.1.3-.3.6-.6 1.1-.9.4-.2 1-.4 2.2-.5C8.4 2.2 8.8 2.2 12 2.2zm0-2.2C8.7 0 8.3 0 7 .1 5.7.1 4.7.3 4 .5c-.8.2-1.5.5-2.2 1.1C1.5 2.4 1 3.1.7 3.9c-.2.7-.4 1.7-.5 3C0 8.3 0 8.7 0 12s0 3.7.1 5c.1 1.3.3 2.3.5 3 .3.8.8 1.5 1.1 2.2.7.7 1.4 1 2.2 1.1 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.3-.3 3-.5.8-.2 1.5-.5 2.2-1.1.7-.7 1-1.4 1.1-2.2.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.3-.5-3-.2-.8-.5-1.5-1.1-2.2-.7-.7-1.4-1-2.2-1.1-1.3-.1-1.7-.1-5-.1z"/>
-            <circle cx="12" cy="12" r="3.2"/>
-            <circle cx="17.5" cy="6.5" r="1.5"/>
-          </svg>
-        </a>
+      <div class="flex space-x-5">
         <!-- LinkedIn -->
         <a href="#" class="hover:text-pink-400 transition-colors" aria-label="LinkedIn">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M20 0H4C1.8 0 0 1.8 0 4v16c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zM7 19H4v-9h3v9zm-1.5-10.2C5 8.8 4.2 8 3 8s-2 .8-2 1.8S1.8 12 3 12s2-.8 2-1.8zM20 19h-3v-4.5c0-1.1-.4-1.9-1.3-1.9-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8V19h-3s.04-8 0-9h3v1.3c.4-.6 1.1-1.5 2.6-1.5 1.9 0 3.4 1.2 3.4 3.8V19z"/>
+            <path
+              d="M20 0H4C1.8 0 0 1.8 0 4v16c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zM7 19H4v-9h3v9zm-1.5-10.2C5 8.8 4.2 8 3 8s-2 .8-2 1.8S1.8 12 3 12s2-.8 2-1.8zM20 19h-3v-4.5c0-1.1-.4-1.9-1.3-1.9-.7 0-1.1.5-1.3 1-.1.2-.1.5-.1.8V19h-3s.04-8 0-9h3v1.3c.4-.6 1.1-1.5 2.6-1.5 1.9 0 3.4 1.2 3.4 3.8V19z" />
           </svg>
         </a>
+
         <!-- Facebook -->
         <a href="#" class="hover:text-pink-400 transition-colors" aria-label="Facebook">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M22 0H2C.9 0 0 .9 0 2v20c0 1.1.9 2 2 2h10V14h-3v-4h3V7c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.4.1 2.7.1v3h-1.8c-1.4 0-1.7.7-1.7 1.6v2.2h3.4l-.4 4h-3v10h5c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+            <path
+              d="M22 0H2C.9 0 0 .9 0 2v20c0 1.1.9 2 2 2h10V14h-3v-4h3V7c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.4.1 2.7.1v3h-1.8c-1.4 0-1.7.7-1.7 1.6v2.2h3.4l-.4 4h-3v10h5c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z" />
           </svg>
         </a>
+
         <!-- X / Twitter -->
         <a href="#" class="hover:text-pink-400 transition-colors" aria-label="X / Twitter">
           <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-            <path d="M24 4.6c-.9.4-1.9.6-2.9.8 1-.6 1.8-1.5 2.2-2.6-.9.6-2 .9-3.1 1.2-.9-.9-2.1-1.5-3.5-1.5-2.7 0-4.8 2.2-4.8 4.8 0 .4 0 .7.1 1C7.7 8.1 4.1 6.1 1.7 3.2c-.4.7-.6 1.5-.6 2.3 0 1.7.9 3.2 2.2 4.1-.8 0-1.5-.2-2.2-.6v.1c0 2.3 1.6 4.3 3.7 4.8-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.3 3.2 4.2 3.2-1.5 1.2-3.4 1.9-5.5 1.9-.4 0-.7 0-1.1-.1 1.9 1.2 4.2 1.9 6.6 1.9 7.9 0 12.2-6.6 12.2-12.3v-.6c.9-.7 1.7-1.5 2.3-2.4z"/>
+            <path
+              d="M24 4.6c-.9.4-1.9.6-2.9.8 1-.6 1.8-1.5 2.2-2.6-.9.6-2 .9-3.1 1.2-.9-.9-2.1-1.5-3.5-1.5-2.7 0-4.8 2.2-4.8 4.8 0 .4 0 .7.1 1C7.7 8.1 4.1 6.1 1.7 3.2c-.4.7-.6 1.5-.6 2.3 0 1.7.9 3.2 2.2 4.1-.8 0-1.5-.2-2.2-.6v.1c0 2.3 1.6 4.3 3.7 4.8-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 1.9 2.3 3.2 4.2 3.2-1.5 1.2-3.4 1.9-5.5 1.9-.4 0-.7 0-1.1-.1 1.9 1.2 4.2 1.9 6.6 1.9 7.9 0 12.2-6.6 12.2-12.3v-.6c.9-.7 1.7-1.5 2.3-2.4z" />
           </svg>
         </a>
       </div>
 
       <!-- RIGHT: Back to Top Button -->
-      <div>
-        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-                class="bg-pink-400 text-black font-bold px-6 py-3 rounded-lg hover:bg-pink-300 transition-colors">
-          Back to Top
+      <div class="relative z-20">
+        <button
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+          class="min-w-[180px] h-12 px-8 text-base font-bold text-black rounded-lg backdrop-blur-md bg-white/10 shadow-lg transition-transform hover:scale-105 relative overflow-hidden border border-white/20">
+          
+          <span class="relative z-10">Back to Top</span>
+
+          <!-- Gradient Glow Overlay -->
+          <div class="absolute inset-0 z-0 bg-gradient-to-r from-[#c8fedc] via-pink-400 to-orange-300 opacity-40 rounded-lg"></div>
         </button>
       </div>
-
     </div>
 
-    <!-- Optional Navigation Links below -->
+    <!-- Navigation Links -->
     <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-white/70">
       <a href="#home" class="hover:text-pink-400 transition-colors">Home</a>
       <a href="#about" class="hover:text-pink-400 transition-colors">About</a>
@@ -614,7 +655,12 @@
       <a href="#contact" class="hover:text-pink-400 transition-colors">Contact</a>
     </div>
   </div>
+
+  <!-- Background Blur Layer (behind everything) -->
+  <div class="absolute inset-0 backdrop-blur-md bg-[#222222]/95 -z-10"></div>
 </footer>
+
+
 
 
 
