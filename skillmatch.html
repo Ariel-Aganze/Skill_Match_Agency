@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Skills Match Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#061099",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101122",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#1A1A1A] dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+
+<header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md shadow-sm transition-all duration-300">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between whitespace-nowrap px-10 py-3">
+      
+      <!-- Logo -->
+      <div class="flex items-center gap-4 text-primary">
+        <div class="size-6">
+          <!-- Optional SVG logo -->
+        </div>
+        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Skills Match Agency</h2>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-9">
+        <a href="#home" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Home</a>
+        <a href="#about" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">About</a>
+        <a href="#focus" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Focus</a>
+        <a href="#testimonials" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Testimonials</a>
+        <a href="#contact" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Contact</a>
+      </nav>
+
+      <!-- Call to Action -->
+      <a href="#contact" class="hidden md:flex items-center justify-center h-10 px-4 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+        <span>Partner with Us</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main class="flex-grow">
+
+<section class="relative flex min-h-screen items-center justify-center" id="home">
+  <!-- Background image -->
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+       style='background-image: url("img/corporate.jpg");'></div>
+  <!-- Subtle blue overlay with opacity -->
+  <div class="absolute inset-0 bg-[#061099] opacity-50"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center text-white px-4">
+    <h1 class="text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
+      Bridging Interns and Employers for a Better Future.
+    </h1>
+    <p class="mt-4 text-base md:text-lg font-normal leading-normal max-w-3xl mx-auto">
+      Connecting passionate students with industry opportunities across universities and organizations.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-3 justify-center">
+      <a href="#focus"
+         class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-transform transform hover:scale-105">
+        <span class="truncate">Find Internship</span>
+      </a>
+
+      <a href="#contact"
+         class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-white text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 transition-transform transform hover:scale-105">
+        <span class="truncate">Partner with Us</span>
+      </a>
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2">
+      <a href="#about" class="animate-bounce">
+        <span class="material-symbols-outlined text-4xl">keyboard_arrow_down</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-20 relative bg-background-light dark:bg-background-dark" id="about">
+<div class="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-5" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVh8rOilfBpTASgbEt_XKlbLHQ7K6W14DMPypvSSGC73zFUJZrQtlsXg_BP8JwVcmd7gCniu4j1gbXjyn2XRkQXjyBk6KrIUAOlOj-QOydR9bVdzJF40NF8hSVLg8ctIUO1uK37_IzB6xCkOWNPOR4GYpwpWC_-YY_MdfwFWtokYhZ5HBOhxodySHy61NPhwWBQL9JrUxITpUPZxg_eKgwxLlmkSbqbscNoA_Nw2kVYgqEX4cQichE9g5b532rudWjFZUUJ02RNUw'); filter: blur(8px);"></div>
+<div class="container mx-auto px-4 relative">
+<div class="max-w-4xl mx-auto bg-white/80 dark:bg-background-dark/80 backdrop-blur-sm rounded-xl p-8 md:p-12 shadow-lg">
+<div class="flex flex-col gap-4 text-center">
+<h2 class="text-[#1A1A1A] dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight">About Skills Match Agency</h2>
+<p class="text-[#1A1A1A] dark:text-gray-300 text-base md:text-lg font-normal leading-normal max-w-3xl mx-auto">Skills Match Agency is a professional bridge between academic institutions and employers. We ensure that students get meaningful, hands-on experience while companies gain access to motivated, skilled interns.</p>
+</div>
+<div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-primary">handshake</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight">Partnerships Built on Trust</h3>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-primary">school</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight">Academic Collaboration</h3>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-4xl text-primary">public</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight">Global Opportunities</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white dark:bg-background-dark/95" id="focus">
+<div class="container mx-auto px-4">
+<h2 class="text-[#1A1A1A] dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight text-center mb-12">Focus (Major)</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mx-auto">devices</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight mt-2">Information Technology</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Internships in software, hardware, and networking.</p>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mx-auto">business_center</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight mt-2">Business &amp; Management</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Roles in marketing, finance, and human resources.</p>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mx-auto">engineering</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight mt-2">Engineering</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Opportunities in various engineering disciplines.</p>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mx-auto">stethoscope</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight mt-2">Health &amp; Medical Sciences</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Experience in healthcare and research settings.</p>
+</div>
+<div class="flex flex-1 flex-col gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark p-6 text-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mx-auto">palette</span>
+<h3 class="text-[#1A1A1A] dark:text-white text-lg font-bold leading-tight mt-2">Education &amp; Arts</h3>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal">Internships in teaching, design, and more.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-20 relative bg-primary/10 dark:bg-primary/20" id="testimonials">
+  <!-- Background image -->
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+       style="background-image: url('img/interns.jpg');"></div>
+
+  <!-- Blue overlay with custom color and transparency -->
+  <div class="absolute inset-0" style="background-color: rgba(14, 18, 68, 0.7);"></div>
+
+  <div class="container mx-auto px-4 relative">
+    <h2 class="text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight text-center mb-12">
+      What Our Partners Say
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Testimonial 1 -->
+      <div class="bg-white/90 dark:bg-background-dark/80 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center gap-4 mb-4">
+          <img class="size-14 rounded-full" 
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvI5vLKsRJSh38T-NCOiVU7kXeRDAJR7khIkOPVuM4Rp7TvInNmUna2aL1lUy9NwCDBkJD491_jgsWcHEd-f6OssbcXaIDEfwJA4soH4Znr6hvJHLZjUdsYDTFwuUISnMzzvvdEF-FnwFHe-cZxR3nDRYHus3O7jeB8OU6XxRppK4wDtmlXQVv086G2yRzQKHZdei-YHK1ybY_VdAAFD1jNzewj1KteRjAh6gR5o9maqHlmp9pCnSvlazn1IAtlpzH1CaxualTsoo" 
+               alt="Employer photo">
+          <div>
+            <h4 class="font-bold text-[#1A1A1A] dark:text-white">John Doe</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-400">HR Manager, Tech Innovations Inc.</p>
+          </div>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300">
+          "Skills Match Agency provided us with exceptional interns who were ready to contribute from day one. A seamless and valuable partnership."
+        </p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white/90 dark:bg-background-dark/80 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center gap-4 mb-4">
+          <img class="size-14 rounded-full" 
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnyH98kosQeSHXWYqBVhMv-U4rsSqaYL6Q0TSzfeqp0Ais8dBgfcJ1dz8nvN59xmKtwksJt-KRvMrLa5kUPoXiG4PTbW9oqQtSCqdMDWHGAnc0dr1i0j0UKWBXY2qtRiqynw7B8b8xV8_S2bz20YoiUKxGfhCmp7A4WPWRHXk4DS9FyPa7yJfR1i434lJQKXkvsrUcXOo2CLMIWOM6A0Mo-tS1P6sHBYTcHtxRfM11W1LY__RWDGycXw78XuXZ0rixweHaBI4H96c" 
+               alt="Student photo">
+          <div>
+            <h4 class="font-bold text-[#1A1A1A] dark:text-white">Jane Smith</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Computer Science Intern</p>
+          </div>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300">
+          "Finding an internship through this platform was a game-changer. They matched my skills perfectly with a great company."
+        </p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white/90 dark:bg-background-dark/80 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center gap-4 mb-4">
+          <img class="size-14 rounded-full" 
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp_S-pq8XR2jxzxEY5TnhdIM6oucPAsNuU7wMRRThh_SNOTaIu25aSyzp4Cs8b0WmJNKxsCHL00VhDeE4M23_m5oOQAMfctAV_Qub3Km88u20i_j3fCrFqxJaBmFcJdX3saUWtyAKr7Tz3LIXYeJWlo5lNEL24EAO3rSuT3ppNy97ZwZeyDvmOFfSWFWLcC7n22-RlTwCouOqW_QdgzAG9OQos-f44sNbouyGUVgFFZHJxt4b5lb7dZY6Pe8BQNy5lsfGsIfS2cjs" 
+               alt="University representative photo">
+          <div>
+            <h4 class="font-bold text-[#1A1A1A] dark:text-white">Emily Johnson</h4>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Career Advisor, State University</p>
+          </div>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300">
+          "Our students have had incredible opportunities thanks to Skills Match Agency. They are a trusted partner for our university's internship program."
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-20 relative" id="contact">
+<div class="absolute inset-0 bg-cover bg-center opacity-10 dark:opacity-5" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVh8rOilfBpTASgbEt_XKlbLHQ7K6W14DMPypvSSGC73zFUJZrQtlsXg_BP8JwVcmd7gCniu4j1gbXjyn2XRkQXjyBk6KrIUAOlOj-QOydR9bVdzJF40NF8hSVLg8ctIUO1uK37_IzB6xCkOWNPOR4GYpwpWC_-YY_MdfwFWtokYhZ5HBOhxodySHy61NPhwWBQL9JrUxITpUPZxg_eKgwxLlmkSbqbscNoA_Nw2kVYgqEX4cQichE9g5b532rudWjFZUUJ02RNUw'); filter: blur(8px);"></div>
+<div class="container mx-auto px-4 relative">
+<div class="max-w-3xl mx-auto bg-white/90 dark:bg-background-dark/90 backdrop-blur-sm rounded-xl p-8 md:p-12 shadow-2xl">
+<h2 class="text-[#1A1A1A] dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight text-center mb-8">Apply Now</h2>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="full-name" placeholder="Full Name" type="text"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="full-name">Full Name</label>
+</div>
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="establishment" placeholder="University/College" type="text"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="establishment">Establishment (University/College)</label>
+</div>
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="age" placeholder="Age" type="number"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="age">Age</label>
+</div>
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="nationality" placeholder="Nationality" type="text"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="nationality">Nationality</label>
+</div>
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="focus" placeholder="Focus / Faculty" type="text"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="focus">Focus / Faculty</label>
+</div>
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="study-level" placeholder="Current Level of Study" type="text"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="study-level">Current Level of Study</label>
+</div>
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="start-date" placeholder="Start Date" type="date"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="start-date">Start Date</label>
+</div>
+<div class="relative">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="end-date" placeholder="End Date" type="date"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="end-date">End Date</label>
+</div>
+<div class="relative md:col-span-2">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="email" placeholder="Email" type="email"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="email">Email</label>
+</div>
+<div class="relative md:col-span-2">
+<input class="peer h-10 w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="phone" placeholder="Phone Number (WhatsApp)" type="tel"/>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="phone">Phone Number (WhatsApp)</label>
+</div>
+<div class="relative md:col-span-2">
+<textarea class="peer w-full rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-4 py-2 text-sm text-[#1A1A1A] dark:text-white placeholder-transparent focus:outline-none focus:ring-2 focus:ring-primary" id="comment" placeholder="Comment (Note)" rows="4"></textarea>
+<label class="absolute left-4 -top-3.5 text-gray-500 dark:text-gray-400 text-xs transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-primary peer-focus:text-xs" for="comment">Comment (Note)</label>
+</div>
+<div class="md:col-span-2">
+<button class="w-full flex min-w-[84px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-transform transform hover:scale-105" type="submit">
+<span class="truncate">Send Application</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-background-dark text-white py-10">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+
+      <!-- Logo & Description -->
+      <div class="text-center md:text-left">
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-3">
+          
+          <h2 class="text-xl font-semibold tracking-tight">Skills Match Agency</h2>
+        </div>
+        <p class="text-gray-200 text-sm max-w-sm">
+          Bridging interns and employers to build successful career pathways.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="flex flex-col text-center md:text-left">
+        <h3 class="font-semibold mb-3 text-lg">Navigate</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#home" class="hover:text-white transition">Home</a></li>
+          <li><a href="#about" class="hover:text-white transition">About</a></li>
+          <li><a href="#focus" class="hover:text-white transition">Focus</a></li>
+          <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="text-center md:text-left">
+        <h3 class="font-semibold mb-3 text-lg">Contact</h3>
+        <p class="text-gray-300 text-sm">info@skillsmatch.com</p>
+        <p class="text-gray-300 text-sm">+1 (555) 123-4567</p>
+
+        <!-- Social Media -->
+        <div class="flex justify-center md:justify-start gap-3 mt-4">
+          <a href="#" class="bg-white text-[#061099] p-2 rounded-full hover:bg-blue-100 transition">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="bg-white text-[#061099] p-2 rounded-full hover:bg-blue-100 transition">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="bg-white text-[#061099] p-2 rounded-full hover:bg-blue-100 transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/20 mt-10 pt-6 text-center text-gray-300 text-sm">
+      © Skills Match Agency. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+</div>
+</body></html>
