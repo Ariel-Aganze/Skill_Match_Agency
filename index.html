@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Match Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#137fec",
+          "background-light": "#f3f4f6",
+        },
+        fontFamily: {
+          "display": ["Inter", "sans-serif"]
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+  }
+
+  .glass-card {
+    backdrop-filter: blur(12px);
+    background-color: rgba(16, 25, 34, 0.65);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+  }
+
+  .cta-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .cta-button:hover {
+    transform: translateY(-2px);
+  }
+</style>
+</head>
+<body>
+
+<div class="flex flex-col min-h-screen justify-center items-center px-6 py-12">
+
+  <!-- Header -->
+  <div class="mb-12 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">Welcome to Skill Matching Agency</h1>
+    <p class="mt-4 text-gray-700 max-w-2xl mx-auto text-lg">
+      Explore our platforms designed for language learning, skill matching, and professional growth.
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="flex flex-col lg:flex-row gap-8 w-full max-w-6xl">
+
+    <!-- Skill Language Card -->
+    <div class="glass-card flex-1 relative overflow-hidden bg-cover bg-center" style='background-image: url("img/student_full.png");'>
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative flex flex-col items-center justify-center p-8 text-center text-white">
+        <h2 class="text-4xl font-extrabold mb-4">Skill Language</h2>
+        <p class="text-lg max-w-sm mb-8 text-white/80">
+          Master new languages with our interactive learning platform.
+        </p>
+        <a href="skilllanguage.html">
+          <button class="cta-button flex min-w-[84px] items-center justify-center rounded-lg h-12 px-8 bg-primary text-white font-bold text-base hover:bg-primary/90">
+            <span>Visit Skill Language</span>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Skill Match Card -->
+    <div class="glass-card flex-1 relative overflow-hidden bg-cover bg-center" style='background-image: url("img/corporate.jpg");'>
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative flex flex-col items-center justify-center p-8 text-center text-white">
+        <h2 class="text-4xl font-extrabold mb-4">Skill Match</h2>
+        <p class="text-lg max-w-sm mb-8 text-white/80">
+          Find your perfect job by matching your skills with top companies.
+        </p>
+        <a href="skillmatch.html">
+          <button class="cta-button flex min-w-[84px] items-center justify-center rounded-lg h-12 px-8 bg-primary text-white font-bold text-base hover:bg-primary/90">
+            <span>Visit Skill Match</span>
+          </button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-16 text-sm text-gray-500 text-center">
+    © Skill Matching Agency. All rights reserved.
+  </footer>
+
+</div>
+
+</body>
+</html>
