@@ -31,18 +31,33 @@
         }
     </script>
 <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  /* Smooth scrolling for the page */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Hamburger menu open/close animation */
+  #hamburgerBtn.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #hamburgerBtn.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburgerBtn.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+</style>
+
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-[#1A1A1A] dark:text-white">
 <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 
 <header class="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md shadow-sm transition-all duration-300">
   <div class="container mx-auto px-4">
-    <div class="flex items-center justify-between whitespace-nowrap px-10 py-3">
-      
+    <div class="flex items-center justify-between px-4 py-3">
+
       <!-- Logo -->
       <div class="flex items-center gap-4 text-primary">
         <div class="size-6">
@@ -51,7 +66,7 @@
         <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Skills Match Agency</h2>
       </div>
 
-      <!-- Navigation -->
+      <!-- Desktop Navigation -->
       <nav class="hidden md:flex items-center gap-9">
         <a href="#home" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Home</a>
         <a href="#about" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">About</a>
@@ -61,11 +76,36 @@
         <a href="index.html" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Bridge</a>
       </nav>
 
-      <!-- Call to Action -->
+      <!-- Desktop CTA -->
       <a href="#contact" class="hidden md:flex items-center justify-center h-10 px-4 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
-        <span>Partner with Us</span>
+        Partner with Us
       </a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <div class="md:hidden">
+        <button id="hamburgerBtn" class="flex flex-col w-6 h-6 justify-between items-center">
+          <span class="block w-full h-0.5 bg-primary transition-transform"></span>
+          <span class="block w-full h-0.5 bg-primary transition-transform"></span>
+          <span class="block w-full h-0.5 bg-primary transition-transform"></span>
+        </button>
+      </div>
+
     </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white/95 dark:bg-background-dark/95 backdrop-blur-md shadow-md absolute w-full top-full left-0">
+    <nav class="flex flex-col items-center py-4 gap-4">
+      <a href="#home" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Home</a>
+      <a href="#about" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">About</a>
+      <a href="#focus" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Focus</a>
+      <a href="#testimonials" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Testimonials</a>
+      <a href="#contact" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Contact</a>
+      <a href="index.html" class="text-[#1A1A1A] dark:text-white text-sm font-medium hover:text-primary transition-colors">Bridge</a>
+      <a href="#contact" class="mt-2 w-3/4 text-center h-10 px-4 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+        Partner with Us
+      </a>
+    </nav>
   </div>
 </header>
 
@@ -321,6 +361,7 @@
           <li><a href="#focus" class="hover:text-white transition">Focus</a></li>
           <li><a href="#testimonials" class="hover:text-white transition">Testimonials</a></li>
           <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          <li><a href="index.html" class="hover:text-white transition">Bridge</a></li>
         </ul>
       </div>
 
@@ -354,4 +395,14 @@
 
 
 </div>
-</body></html>
+</body>
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    hamburgerBtn.classList.toggle('open');
+  });
+</script>
+</html>
